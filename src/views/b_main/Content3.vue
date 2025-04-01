@@ -70,6 +70,7 @@
   position: relative;
   margin-top: 100px;
   max-width: 1300px;
+  margin: auto;
 }
 /* 중앙 원 */
 .macontent3_wrap .inner::before {

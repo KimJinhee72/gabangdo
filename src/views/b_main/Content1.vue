@@ -4,8 +4,7 @@
     <div class="inner">
       <!-- 위 -->
       <div class="macontent1_up">
-        <h3>|&nbsp;&nbsp;짐운송도! 한번에!</h3>
-        <h4>가방도 하나면 끝!</h4>
+        <h2>|&nbsp;&nbsp;&nbsp;짐운송도!</h2> <h2> &nbsp; 한번에!</h2> <h2>&nbsp;  가방도!</h2><h2>&nbsp; 한번에!</h2>
       </div>
       <!-- 아래 -->
       <div class="macontent1_down">
@@ -15,7 +14,7 @@
           <div class="masize_txt">
             <h2>S 사이즈</h2>
             <h4>기내용 캐리어,소형 배낭 등</h4>
-            <h5>21인치 이하/55cm 이하/10kg 미만</h5>
+            <h5>21인치이하/55cm이하/10kg미만</h5>
           </div>
           <!-- 아이콘 -->
           <div class="masize_icon">
@@ -37,8 +36,8 @@
           <!-- 사이즈 섹션 상단 설명 -->
           <div class="masize_txt">
             <h2>M 사이즈</h2>
-            <h4>화물용 캐리어,등산 가방 등</h4>
-            <h5>25인치 이하 / 65cm이하 / 20kg 미만</h5>
+            <h4>화물용 캐리어, 등산 가방 등</h4>
+            <h5>25인치이하/65cm이하/20kg미만</h5>
           </div>
           <!-- 아이콘 -->
           <div class="masize_icon">
@@ -60,8 +59,8 @@
           <!-- 사이즈 섹션 상단 설명 -->
           <div class="masize_txt">
             <h2>L 사이즈</h2>
-            <h4>대형 캐리어,골프백,대형 배낭 등</h4>
-            <h5>26인치 이상 / 66cm 이상 / 30kg 미만</h5>
+            <h4>대형 캐리어, 배낭, 골프백 등</h4>
+            <h5>26인치이상/66cm이상/30kg미만</h5>
           </div>
           <!-- 아이콘 -->
           <div class="masize_icon">
@@ -104,62 +103,70 @@
     </div>
   </div>
 </template>
-<script setup></script>
-<style scoped>
+<script setup>
+
+</script>
+<style lang="scss" scoped>
+@import '/src/assets/Variables';
 /* 전체영역 */
 .macontent1_wrap {
   width: 100%;
   background-color: #0066b3;
   margin: auto;
 }
-.macontent1_wrap .inner {
-  margin-top: 50px;
+.inner {
   max-width: 1300px;
-  padding: 65px 0px;
+  padding: $padding-s 0px;
+  margin: auto;
 }
 /* 위 - txt */
 .macontent1_up {
+  margin-left: $margin-L - 25px;
   display: flex;
-  color: #fff;
   align-items: flex-end;
+  color: #fff;
 }
-.macontent1_up > h4 {
-  margin-left: 10px;
-  font-weight: 400;
+.macontent1_up > h2 {
+  margin-left: $margin-sss / 2;
 }
 /* 위 - img-캡션별 */
 /* 전체영역 */
 .macontent1_down {
   display: flex;
-  padding-top: 39px;
-  justify-content: space-between;
+  padding: $padding-s $padding-s 0 $padding-s;
+  justify-content: space-evenly;
+  line-height: 20px;
 }
 /* 사이즈 섹션 */
 .masize {
-  min-width: 280px;
-  padding: 30px;
+  width: 100%;
+  max-width: 200px;
+  padding: 20px;
   border-radius: 30px;
   background-color: #fff;
 }
 /* 사이즈 섹션 상단 설명  */
 .masize_txt > h4 {
+  font-size: 14.5px;
   color: #162b50;
 }
 .masize_txt > h5 {
+  font-size: 11.7px;
   color: #5a5a5a;
 }
 /* 아이콘 */
 .masize_icon {
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 .masize_icon > img {
-  width: 70%;
+  width: 50%;
 }
 /* 사이즈 섹션 하단 설명 */
 .masize_beforecash {
   text-align: right;
   min-height: 20px;
+  font-size: 14px;
   letter-spacing: -1px;
   color: #5a5a5a;
 }
@@ -168,7 +175,8 @@
   align-items: center;
   justify-content: flex-end;
   gap: 5px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 20px;
   letter-spacing: -1px;
   color: #162b50;
 }
