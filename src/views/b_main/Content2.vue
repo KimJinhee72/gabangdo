@@ -6,10 +6,10 @@
         <div class="macontent2_iconimg">
           <a href="#">
             <!-- 아이콘 이미지 -->
-            <img
-              src="/public/images/gh/ma_content2/gabangdo_icon.png"
-              alt="가방도 아이콘"
-            />
+            <router-link to="/bangbeob"><img
+              src="/public/images/gh/ma_content2/bangbeobdo_icon.png"
+              alt="방법도 아이콘"
+            /></router-link>
             <!-- hover시 보일 텍스트 -->
             <div class="macontent2_icon_hover">
               <h5>짐운송, 보관,<br />차량 대절까지<br />당일 배송, 안전한 픽업</h5>
@@ -24,10 +24,10 @@
         <div class="macontent2_iconimg">
           <a href="#">
             <!-- 아이콘 이미지 -->
-            <img
+            <router-link to="/yeyak"><img
               src="/public/images/gh/ma_content2/reservation_icon.png"
               alt="예약도 아이콘"
-            />
+            /></router-link>
             <!-- hover시 보일 텍스트 -->
             <div class="macontent2_icon_hover">
               <h5>
@@ -46,7 +46,7 @@
         <div class="macontent2_iconimg">
           <a href="#">
             <!-- 아이콘 이미지 -->
-            <img src="/public/images/gh/ma_content2/cash_icon.png" alt="요금도 아이콘" />
+            <router-link to="/yogeum"><img src="/public/images/gh/ma_content2/cash_icon.png" alt="요금도 아이콘" /></router-link>
             <!-- hover시 보일 텍스트 -->
             <div class="macontent2_icon_hover">
               <h5>
@@ -64,10 +64,10 @@
         <div class="macontent2_iconimg">
           <a href="#">
             <!-- 아이콘 이미지 -->
-            <img
+            <router-link to="/sotong"><img
               src="/public/images/gh/ma_content2/comunity_icon.png"
               alt="소통도 아이콘"
-            />
+            /></router-link>
             <!-- hover시 보일 텍스트 -->
             <div class="macontent2_icon_hover">
               <h5>
@@ -84,7 +84,7 @@
         <div class="macontent2_iconimg">
           <a href="#">
             <!-- 아이콘 이미지 -->
-            <img src="/public/images/gh/ma_content2/trip_icon.png" alt="여행도 아이콘" />
+            <router-link to="/yeohang"><img src="/public/images/gh/ma_content2/trip_icon.png" alt="여행도 아이콘" /></router-link>
             <!-- hover시 보일 텍스트 -->
             <div class="macontent2_icon_hover">
               <h5>대구 축제, 관광지, 맛집<br />정보를 만나보세요.</h5>
